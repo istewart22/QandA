@@ -14,13 +14,17 @@ export const HomePage = () => {
     setQuestionsLoading(false);
   }, []);
 
+  const handleAskQuestionClick = () => {
+    console.log('TODO - move to the AskPage');
+  };
+
   return (
     <Page>
       <div>
         <div>
           <PageTitle>Unanswered Questions</PageTitle>
 
-          <button>Ask a question</button>
+          <button onClick={handleAskQuestionClick}>Ask a question</button>
         </div>
         {questionsLoading ? (
           <div>Loading…</div>
